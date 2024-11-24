@@ -79,8 +79,8 @@ for k,v in pairs(allitem) do
  
 
     local tvk = Instance.new("UIGridLayout",cac)
-    tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Tighter spacing
-    tvk.CellSize =  UDim2.new(0,15,0,15) -- Extra small size
+    tvk.CellPadding = UDim2.new(0.002,0,0.002,0) -- Slightly increased padding
+    tvk.CellSize =  UDim2.new(0,30,0,30) -- Slightly larger size
     tvk.FillDirectionMaxCells = 100
     tvk.FillDirection = Enum.FillDirection.Horizontal
 
@@ -91,7 +91,7 @@ for k,v in pairs(allitem) do
             if v.ItemLine2.Text~="Accessory" then 
                 bucac = v.ItemName:Clone()
                 bucac.BackgroundTransparency = 1
-                bucac.TextSize = 8 -- Smaller text for compact display
+                bucac.TextSize = 10 -- Slightly larger text
                 bucac.TextXAlignment  = 2
                 bucac.TextYAlignment  = 2
                 bucac.ZIndex  = 5
@@ -116,7 +116,7 @@ MeleeG.LayoutOrder = table.find(RaityLevel,k)
 MeleeG.AutomaticSize=2
 MeleeG.LayoutOrder = 100
 local tvk = Instance.new("UIGridLayout",MeleeG)
-tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Tighter spacing
-tvk.CellSize =  UDim2.new(0,15,0,15) -- Extra small size
+tvk.CellPadding = UDim2.new(0.002,0,0.002,0) -- Slightly increased padding
+tvk.CellSize =  UDim2.new(0,30,0,30) -- Slightly larger size
 tvk.FillDirectionMaxCells = 100
 tvk.FillDirection = Enum.FillDirection.Horizontal
