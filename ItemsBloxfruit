@@ -52,7 +52,7 @@ end
 local tvk = Instance.new("UIListLayout")
 tvk.FillDirection = Enum.FillDirection.Vertical
 tvk.SortOrder = 2
-tvk.Padding = UDim.new(0,20)
+tvk.Padding = UDim.new(0,10)
 
 local Left = Instance.new("Frame",game.Players.LocalPlayer.PlayerGui.BubbleChat)
 Left.BackgroundTransparency = 1
@@ -79,8 +79,8 @@ for k,v in pairs(allitem) do
  
 
     local tvk = Instance.new("UIGridLayout",cac)
-    tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Resized for tighter spacing
-    tvk.CellSize =  UDim2.new(0,30,0,30) -- Smaller size for mobile
+    tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Tighter spacing
+    tvk.CellSize =  UDim2.new(0,15,0,15) -- Extra small size
     tvk.FillDirectionMaxCells = 100
     tvk.FillDirection = Enum.FillDirection.Horizontal
 
@@ -91,7 +91,7 @@ for k,v in pairs(allitem) do
             if v.ItemLine2.Text~="Accessory" then 
                 bucac = v.ItemName:Clone()
                 bucac.BackgroundTransparency = 1
-                bucac.TextSize = 10
+                bucac.TextSize = 8 -- Smaller text for compact display
                 bucac.TextXAlignment  = 2
                 bucac.TextYAlignment  = 2
                 bucac.ZIndex  = 5
@@ -116,7 +116,7 @@ MeleeG.LayoutOrder = table.find(RaityLevel,k)
 MeleeG.AutomaticSize=2
 MeleeG.LayoutOrder = 100
 local tvk = Instance.new("UIGridLayout",MeleeG)
-tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Resized for tighter spacing
-tvk.CellSize =  UDim2.new(0,30,0,30) -- Smaller size for mobile
+tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Tighter spacing
+tvk.CellSize =  UDim2.new(0,15,0,15) -- Extra small size
 tvk.FillDirectionMaxCells = 100
 tvk.FillDirection = Enum.FillDirection.Horizontal
