@@ -79,8 +79,8 @@ for k,v in pairs(allitem) do
  
 
     local tvk = Instance.new("UIGridLayout",cac)
-    tvk.CellPadding = UDim2.new(0.002,0,0.002,0) -- Adjusted for mobile
-    tvk.CellSize =  UDim2.new(0,50,0,50) -- Adjusted for mobile
+    tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Resized for tighter spacing
+    tvk.CellSize =  UDim2.new(0,30,0,30) -- Smaller size for mobile
     tvk.FillDirectionMaxCells = 100
     tvk.FillDirection = Enum.FillDirection.Horizontal
 
@@ -116,7 +116,7 @@ MeleeG.LayoutOrder = table.find(RaityLevel,k)
 MeleeG.AutomaticSize=2
 MeleeG.LayoutOrder = 100
 local tvk = Instance.new("UIGridLayout",MeleeG)
-tvk.CellPadding = UDim2.new(0.002,0,0.002,0) -- Adjusted for mobile
-tvk.CellSize =  UDim2.new(0,50,0,50) -- Adjusted for mobile
+tvk.CellPadding = UDim2.new(0.001,0,0.001,0) -- Resized for tighter spacing
+tvk.CellSize =  UDim2.new(0,30,0,30) -- Smaller size for mobile
 tvk.FillDirectionMaxCells = 100
 tvk.FillDirection = Enum.FillDirection.Horizontal
